@@ -1,0 +1,532 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: myFont;
+    src: url(./font/Poppins-Regular.ttf);
+}
+body{
+    font-family: myFont;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(248,249,250,1) 35%, rgba(248,249,250,1) 100%);
+
+}
+:root{
+    --primary:#C9F31D;
+    --secondary:#FFFFFF
+}
+h1{
+    font-size: 60px;
+
+}
+@media (width<992px){
+    h1{
+        font-size: 44px;
+    }
+}
+@media (width<768px){
+    h1{
+        font-size: 36px;
+    }
+}
+@media (width<576px){
+    h1{
+        font-size: 30px;
+    }
+}
+.container-fluid{
+    /* background: #000; */
+}
+li{
+    list-style: none;
+}
+.navbar-ul li a{
+    text-decoration: none;
+    color: white;
+    /* padding: 10px; */
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar-brand img{
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-row{
+    width: 100%;
+}
+.nav-bg{
+    background-image: url(./200ppi/Asset\ 1.png);
+    height: 850px;
+    /* background-repeat: no-repeat; */
+    
+    background-position: center center;
+    background-size: cover;
+}
+.navbar-ul li{
+    padding: 20px ;
+}
+.menu-icon i{
+    font-size: 30px;
+    color: white;
+}
+.logo-div{
+    width: 80%;
+}
+
+.navbar-ul li:hover:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.navbar-ul li:after {
+    border-bottom: 2px solid var(--primary);
+    content: "";
+    display: block;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+}
+
+@media (width<400px){
+    .logo-div{
+        width: 100%;
+    }
+    .menu-icon i{
+        font-size: 25px;
+        color: white;
+    }
+}
+.offcanvas{
+    background-color: #13171A;
+}
+.offcanvas-body{
+    /* background-color: black; */
+    color: black;
+}
+.offcanvas-header{
+    border-bottom: 2px solid white;
+}
+.fa-xmark{
+    color: white ;
+}
+/* Main Content CSs*/
+.main-content-row{
+    /* background: pink; */
+    
+}
+.main-content{
+    padding: 40px;
+    /* background: red; */
+    height:600px;
+}
+.main-content h1{
+    /* font-size: 50px; */
+    font-weight: 700;
+    color:var(--secondary)
+}
+.main-content p{
+    color: var(--secondary);
+    width: 80%;
+    font-size: 22px;
+}
+.main-content h1 span{
+    color: var(--primary)
+}
+.offcanvas-body{
+    color: #13171A;
+}
+@media (width<992px) {
+    .nav-bg{
+        background-image: none;
+        background: #13171A;
+        height: min-content;
+        align-items: end;
+        height: auto;
+        
+    }
+    .main-content{
+        margin-top: 40px;
+        padding: 40px;
+        /* background: red; */
+        /* height:400px; */
+        align-items: end;
+        margin-top: 120px;
+        height: auto;
+
+    }
+    .main-content h1{
+        font-size: 65px;
+    }
+    
+}
+@media (width<576px) {
+    .main-content h1{
+        /* height: 400px; */
+        font-size: 36px;
+        font-weight: 700;
+        color:var(--secondary)
+    }
+    .main-content p{
+        font-size: 14px;
+    }
+}
+@media (width<576px) {
+    .main-content p{
+        color: var(--secondary);
+        width: 100%;
+    }
+}
+/* Main COntent CSs ENds */
+
+
+/* Brands DIV CSS */
+
+.brands-div{
+    background-image: url(./200ppi/Asset\ 9.png);
+    height: 100dvh;
+    overflow: hidden;
+    width: 100%;
+    background-position: right top;
+    background-size: cover;
+}
+.brands-img img{
+    max-width: 100%;
+    height: auto;
+}
+.brands-content{
+    height: 100%;
+    /* background: red; */
+}
+.brands-content h1{
+    /* font-size: 50px; */
+    font-weight: 600;
+    padding: 10px;
+}
+.brands-content p{
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+
+/* Brands Div Css Ends */
+.brands-section{
+    background-image: url(./200ppi/Asset\ 9.png);
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ .brands-image img{
+    max-width: 100%;
+    height: auto;
+ }
+ .brands-content h1{
+    font-weight: 900;
+    /* font-size: 60px; */
+    
+ }
+ .brands-content span{
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(182,242,0,1) 0%, rgba(201,243,29,1) 35%, rgba(0,0,0,1) 100%);
+
+ }
+ @media (width<992px){
+    .brands-section{
+        background-image:none;
+        background-position: bottom right;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+ }
+
+
+ /* Services Sectbion CSS */
+ @media (width<992px) {
+    .services-section{
+        background-image: none;
+       background: #14171B;
+       /* border-radius: 60% 60% 0% 0%; */
+    
+    }
+ }
+.services-section{
+    background-image: url(./200ppi/Asset\ 3.png);
+    /* background-size: cover; */
+    background-position: top center;
+    background-size: cover;
+    padding-top: 100px;
+
+}
+.services-section .row{
+    padding-top: 100px;
+}
+
+.card{
+    border:2px solid #78787E;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 80%;
+}
+.card img{
+    width:80px ;
+    height: 80px;
+}
+.card image{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.card-text{
+    padding-top: 20px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+.service-heading h1{
+    /* font-size: 50px; */
+    font-weight: 700;
+    color:var(--secondary)
+}
+
+.service-heading h1 span{
+    color: var(--primary)
+}
+.card-column{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.services-section .row{
+    padding-bottom: 30px;
+}
+.services-section h4{
+    font-weight: 900;
+}
+.card:hover{
+    border-color: var(--primary);
+    cursor: pointer;
+    
+}
+.image-hovered{
+    display: none;
+}
+.card:hover .image-shown{
+    display: none;
+}
+.card:hover .image-hovered{
+    display: block;
+    width:80px ;
+    height: 80px;
+
+}
+.card:hover .card-text{
+    color: var(--primary);
+}
+
+ /* Services Section CSS ENDS */
+
+ /* Work Section CSS Starts*/
+
+ .work-section{
+    margin-top: 80px;
+    margin-bottom: 120px;
+ }   
+ .work-section h1{
+    font-weight: 900;
+ }
+ .work-section .col{
+    padding: 30px;
+    /* background: red; */
+ }
+.work-section .column-1{
+    background-image: url(./200ppi/Asset\ 6.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.work-section .column-2{
+    background-image: url(./200ppi/Asset\ 5.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.work-section .column-3{
+    background-image: url(./200ppi/Asset\ 4.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ /* Work Section CSS ENDS */
+
+
+ /* Our Work Section Css Starts */
+.our-work-section{
+    /* background-image: url(./200ppi/Asset\ 3.png); */
+    /* background-size: cover; */
+    /* background-position: top center;
+    background-size: cover;
+    padding-top: 100px; */
+}
+.work-image img{
+    max-width: 100%;    
+    height: auto;
+
+}
+.services-section .row{
+    padding-top: 100px;
+}
+
+ /* Our work Section Css Ends */
+/* Why CHoose Us */
+@media (width<776px) {
+    .choose-text{
+        font-size: 18px !important;
+    }
+}
+
+/* Why Choose US CSS ENds */
+
+
+ /* Footer */
+           
+                          /* Section style */
+.partner-section{
+    margin-top: -50px;
+}
+.text2{
+    color: lawngreen;
+    
+}
+.main-pic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+.pics{
+    background: red;
+    width: 50%;
+    min-height: 40px;
+    margin-top: 35px;
+}
+.pics img{
+    width: 10rem;
+    min-height:8rem;
+    object-fit: contain;
+
+}
+.marquee-pics img{
+    width: 300px;
+    margin: 10px;
+}
+@media (width<992px){
+    .marquee-pics img{
+        width: 200px;
+    }
+}
+                     /* Footer Start */
+    .white-banner{
+        width: 100%;
+        height: 5rem;
+        background-color: transparent;
+    }     
+.footer-logo{
+    width: 200px;
+    height: auto;
+}
+ .footer-logo img{
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0px;
+    
+ }
+ .footer-content{
+    color: white;
+ }
+ .footer-section{
+    background: #000;
+    color: white;
+ }
+ .footer-section h3{
+    font-weight: 700;
+    padding-bottom: 15px;
+ }
+ .footer-section ul{
+    padding-left: 0;
+ }
+ .footer-section ul li{
+    padding: 5px;
+ }
+.fa-facebook-f{
+    padding: 10px 14px !important;
+    /* padding: 10px !important; */
+}
+.fa-brands:hover{
+    color: #000;
+    background:#fff;
+    transition: 1s;
+
+}
+
+ .fa-brands{
+    border: 2px solid whitesmoke;
+    /* background: red; */
+    padding: 10px 12px;
+    border-radius: 50%;
+    margin: 5px;
+    font-size: 18px;
+    color: white;
+ }
+       
+
+ @media (width<992px) {
+    .services-section{
+        
+        padding-top: 50px;
+    
+    }
+    .services-section .row{
+        padding-top: 50px;
+    }
+ }
+ @media (width<576px) {
+    .services-section{
+        
+        padding-top: 20px;
+    
+    }
+    .services-section .row{
+        padding-top: 5px;
+    }
+ }
+ 
+ @media (width<576px) {
+    .services-section{
+        
+        padding-top: 10px;
+    
+    }
+    .services-section .row{
+        padding-top: 5px;
+    }
+ }
+
+ .text-container {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    animation: changeText 5s linear infinite alternate;
+}
