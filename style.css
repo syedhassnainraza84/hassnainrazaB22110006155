@@ -57,7 +57,7 @@ li{
     width: 100%;
 }
 .nav-bg{
-    background-image: url(./200ppi/Asset\ 1.png);
+    background-image: url(./200ppi/Asset/1.png);
     height: 850px;
     /* background-repeat: no-repeat; */
     
@@ -530,3 +530,4 @@ li{
     margin-top: 50px;
     animation: changeText 5s linear infinite alternate;
 }
+
